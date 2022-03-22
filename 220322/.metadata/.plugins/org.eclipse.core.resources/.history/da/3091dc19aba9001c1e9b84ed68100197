@@ -1,0 +1,15 @@
+package com.text.exam02;
+
+public class ArrayExam {
+	public static void main(String[] argv) {
+		int[] a = new int []{1, 2, 3, 4, 5, 6};
+		for(int idx = 0; idx<a.length; idx++) {
+			System.out.print(a[idx]+" ");
+		}
+		System.out.println("\n");
+		for(int jdx: a) System.out.print(jdx+" ");
+		System.out.println("\n");
+		System.out.println(Arrays.toString(a));
+		int[][] b = new int {{1,2,3},{4,5,6},{7,8,9}};
+	}
+}
