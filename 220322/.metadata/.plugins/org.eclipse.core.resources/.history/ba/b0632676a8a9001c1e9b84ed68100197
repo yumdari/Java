@@ -1,8 +1,0 @@
-package com.text.exam02;
-
-public class ArrayExam {
-	public static void main(String[] argv) {
-		int[] a = new int [6]{1, 2, 3, 4, 5, 6};;
-		for(int idx = 0; idx<=)
-	}
-}
