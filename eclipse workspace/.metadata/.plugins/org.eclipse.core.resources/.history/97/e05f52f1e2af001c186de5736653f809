@@ -1,0 +1,12 @@
+package stud.singletone;
+
+public class SingletoneExam {
+	
+	private SingletoneExam
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.test.exam03;
+
+@FunctionalInterface //Annotation
+interface MyLamdaFunction { //람다함수식 사용 하기 위한 인터페이스 선언
+	int sum(int a, int b);
+}
+@FunctionalInterface //Annotation
+interface Myprint{ //사용자 무기명 인터페이스 ?
+	String printLamda();
+}
+
+public class LamdaExam {
+	public static void main(String[] args) {
+		
+		MyLamdaFunction lamdafunction = (int a, int b)->a+b; //파라미터만 존재 함수명 없음, -> : return과 같은 의미 (익명함수)
+		System.out.println(lamdafunction.sum(3, 4));
+		
+		Myprint myPrint = ()->"Hello World !";//받을 인자가 없기 때문에 ()만 작성
+		System.out.println(myPrint.printLamda());
+		
+		//Supplier : 매개변수 없이 반환값만을 갖는 함수형 인터페이스
+		Supplier<String> supplier = ()->"Hello World 2"
+	}
+}

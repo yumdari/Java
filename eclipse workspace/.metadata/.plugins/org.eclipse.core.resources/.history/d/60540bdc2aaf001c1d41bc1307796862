@@ -1,0 +1,14 @@
+package com.test.exam03;
+
+@FunctionalInterface //Annotation
+interface MyLamdaFunction {
+	int sum(int a, int b);
+}
+
+public class LamdaExam {
+	public static void main(String[] args) {
+		
+		MyLamdaFunction lamdafunction = (int a, int b)->a+b; //파라미터만 존재 함수명 없음, -> : return과 같은 의미
+		System.out.println(lamdafunction.sum(3, 4));
+	}
+}

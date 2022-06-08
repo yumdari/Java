@@ -1,0 +1,16 @@
+package com.test.mapper;
+
+import java.util.List;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+
+import com.test.entity.Member;
+
+@Mapper
+public interface BoardMapper {
+	@Select("select userid, username, age from tbl_test order by userid") //order by userid : 알파벳 순으로 정리
+	public List<Member> selectMemberList();
+	
+	@Insert("")
+	
+}

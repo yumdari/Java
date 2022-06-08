@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>스프링 부트</title>
+</head>
+<body>
+
+<h1>스프링 부트 첫 시작 !</h1>
+<br><br>
+
+<a href="/member/memberList">게시물 목록 보기</a><br>
+<a href="/member/memberRegistry">게시물 등록하기</a>
+
+</body>
+</html>
